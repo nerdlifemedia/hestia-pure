@@ -7,7 +7,7 @@ Hestia Pure is a simple hugo theme, based Pure.
 Clone this repository to your hugo theme directory.
 
 ```
-$ git clone https://github.com/diwao/hestia-pure.git themes/
+$ git clone https://github.com/nerdlifemedia/hestia-pure.git themes/
 $ hugo server --theme=hestia-pure --buildDrafts --watch
 ```
 
@@ -15,29 +15,32 @@ $ hugo server --theme=hestia-pure --buildDrafts --watch
 In this theme you can add variables to your site config file. The following is the example config:
 
 ```
-baseurl = "https://diwao.com/"
-languageCode = "ja"
-title = “diwao’s diary“
+baseurl = "/"
+languageCode = "en"
+title = “johnrlive’s diary“
 theme = 'hestia-pure'
 
 [author]
- author = 'diwao'
- profile = 'I am a frontend engineer working in Sendai City, Japan.'
+ author = 'johnrlive'
+ profile = 'profile goes here'
  image = 'image/theme/profile.jpg'
 
 [Params]
- localeOgp = "ja"
- description = "This site is diwao's blog."
+ localeOgp = "en"
+ description = "This site is johnrlive's blog."
  keywords = "Sendai,Mac,iPhone,Web"
- twitter = "otaman517"
- github = "diwao"
- facebook = "diwaocom"
+ twitter = "johnrlive"
+ github = "johnrlive"
+ facebook = "johnrlive"
  googleanalytics = "UA-12345678-9"
  googlecustomsearch = "xxxxxxxxx"
 ```
 
+## Original Author
+Daisuke Iwao
+
+## Modified By
+John Rodriguez
+
 ## License
 MIT License
-
-## Author
-Daisuke Iwao
