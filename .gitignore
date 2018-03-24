@@ -1,2 +1,4 @@
-# node_modulesを除外
 node_modules/
+data/**/hash.*
+# static/
+public/

@@ -5,8 +5,8 @@
   <a href="{{ .Permalink }}">
     <h3>{{ .Title }}</h3>
   </a>
-  <span>
+  <!-- span>
     <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "2006.01.02" }}</time>
-  </span>
+  </span -->
   <p >{{ if .IsPage }}{{ .Summary }}...{{ else }}{{ .Site.Params.description }}{{ end }}</p>
 </article>
