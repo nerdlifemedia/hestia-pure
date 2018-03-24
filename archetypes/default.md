@@ -1,5 +1,5 @@
 +++
-author = "diwao"
+author = "johnrlive"
 categories = ["", ""]
 date = {{ .Date }}
 draft = true

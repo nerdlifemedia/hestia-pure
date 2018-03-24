@@ -1,13 +1,13 @@
 'use strict';
 
-// モジュール読み込み
+// Load Module
 const gulp = require('gulp');
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 
-// オプション
+// option
 const sassOptions = {
   options: {
     outputStyle: 'compressed',
@@ -22,7 +22,7 @@ const autoprefixerOptions = {
   }
 };
 
-// 各タスク読み込み
+// Read each Task
 gulp.task('style', function(){
   const src = './src/scss/**/*.scss';
   const dest = './static/css';
@@ -35,14 +35,14 @@ gulp.task('style', function(){
     .pipe(gulp.dest(dest))
     // .pipe(browserSync.stream())
     .pipe(notify({
-      title: 'scssをコンパイルしました！',
+      title: 'scssCompiled！',
       message: new Date(),
       sound: 'Glass'
     })
   );
 });
 
-// デフォルトタスク
+// Default task
 gulp.task('default', function(){
   gulp.watch('./src/scss/**/*.scss', ['style']);
 });
